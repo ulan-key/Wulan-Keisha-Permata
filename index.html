@@ -19,15 +19,15 @@
 
 <style>
   :root {
-    --bg:      #f5f3ef;   /* krem hangat */
-    --bg-2:    #ebe8e2;   /* abu krem */
+    --bg:      #f5f3ef;
+    --bg-2:    #ebe8e2;
     --card:    #ffffff;
-    --ink:     #2b2b2b;   /* abu tua hampir hitam */
-    --soft:    #8a8580;   /* abu taupe */
-    --line:    #dcd7d0;   /* garis halus */
-    --accent:  #7d6e5d;   /* cokelat taupe elegan */
-    --accent-2:#a89b8a;   /* taupe muda */
-    --deep:    #3d3a36;   /* abu gelap untuk header */
+    --ink:     #2b2b2b;
+    --soft:    #8a8580;
+    --line:    #dcd7d0;
+    --accent:  #7d6e5d;
+    --accent-2:#a89b8a;
+    --deep:    #3d3a36;
 
     --serif: "Cormorant Garamond", "Times New Roman", serif;
     --sans:  "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -213,6 +213,18 @@
     line-height: 1.8;
   }
 
+  /* bullet list di dalam item */
+  .item ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #5a5651;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+  .item ul li { margin-bottom: 4px; }
+  .item ul li:last-child { margin-bottom: 0; }
+  .item ul li::marker { color: var(--accent-2); }
+
   /* ---------------- tags ---------------- */
 
   .tags {
@@ -310,7 +322,7 @@
   <div class="hero-inner">
     <p class="eyebrow">Biodata</p>
     <h1>Wulan Keisha Permata</h1>
-    <p class="role">Mahasiswa Komputerisasi Akuntansi, Universitas Komputer Indonesia</p>
+    <p class="role">Mahasiswa D3 Komputerisasi Akuntansi, Universitas Komputer Indonesia</p>
     <div class="hero-line"></div>
   </div>
 </header>
@@ -328,50 +340,27 @@
     </div>
     <div class="row">
       <dt>Domisili</dt>
-      <dd>Bandung</dd>
+      <dd>Jl. Tubagus Ismail Bawah No. 38, Bandung</dd>
     </div>
     <div class="row">
       <dt>Email</dt>
       <dd>wulanpermata345@gmail.com</dd>
+    </div>
+    <div class="row">
+      <dt>Telepon</dt>
+      <dd>+62 831 0160 3689</dd>
     </div>
   </dl>
 
   <section>
     <h2>Tentang Saya</h2>
     <p class="lead">
-      Mahasiswa Komputerisasi Akuntansi yang tertarik pada pencatatan keuangan berbasis sistem.
-      Terbiasa mengolah data transaksi dengan Excel dan menyusun laporan keuangan sederhana,
-      serta sedang mempelajari SQL untuk menarik data dari basis data.
+      Mahasiswa Semester 4 Program Studi D3 Komputerisasi Akuntansi dengan pengalaman praktik
+      kerja di PT Pindad (Persero) Divisi MRI sebagai Analis Biaya. Memiliki ketelitian dalam pengolahan
+      dan analisis data biaya, serta terbiasa menggunakan Microsoft Excel dan Word untuk administrasi
+      dan pelaporan. Pribadi yang disiplin, percaya diri, komunikatif, dan mampu bekerja dalam tim
+      maupun individu.
     </p>
-  </section>
-
-  <section>
-    <h2>Kemampuan</h2>
-    <ul class="tags">
-      <li>Microsoft Excel</li>
-      <li>Lookup &amp; Pivot Table</li>
-      <li>Jurnal &amp; Laporan Keuangan</li>
-      <li>Zahir Accounting</li>
-      <li>MYOB</li>
-      <li>SQL Dasar</li>
-      <li>GitHub</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Pengalaman</h2>
-
-    <div class="item">
-      <h3>Bendahara Himpunan Mahasiswa Komputerisasi Akuntansi</h3>
-      <p class="meta">2025 — Sekarang</p>
-      <p>Menyusun laporan pemasukan dan pengeluaran kegiatan himpunan, serta merekap pertanggungjawaban dana tiap acara.</p>
-    </div>
-
-    <div class="item">
-      <h3>Peserta Pelatihan GitHub, Ruang Kreatif HIMA KA</h3>
-      <p class="meta">September 2026</p>
-      <p>Mempelajari pencatatan riwayat perubahan berkas dan kolaborasi dokumen menggunakan GitHub.</p>
-    </div>
   </section>
 
   <section>
@@ -379,8 +368,70 @@
 
     <div class="item">
       <h3>Universitas Komputer Indonesia</h3>
-      <p class="meta">Komputerisasi Akuntansi · 2024 — Sekarang</p>
-      <p>Mata kuliah yang diminati: sistem informasi akuntansi, akuntansi biaya, dan pengolahan data keuangan.</p>
+      <p class="meta">D3 Komputerisasi Akuntansi · 2024 — Sekarang</p>
+    </div>
+
+    <div class="item">
+      <h3>SMAN 10 Garut</h3>
+      <p class="meta">Jurusan IPA</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pengalaman Kerja</h2>
+
+    <div class="item">
+      <h3>PT Pindad (Persero) — Divisi MRI (Analis Biaya)</h3>
+      <p class="meta">Internship · ±1 Bulan</p>
+      <ul>
+        <li>Melakukan pencatatan dan analisis data biaya produksi</li>
+        <li>Membantu penyusunan laporan biaya dan dokumentasi administrasi</li>
+        <li>Menginput dan mengolah data menggunakan Microsoft Excel</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>Penjaga Toko Thrift</h3>
+      <p class="meta">3 Bulan</p>
+      <ul>
+        <li>Melayani pelanggan dan mengelola transaksi penjualan</li>
+        <li>Mengatur display produk dan mengelola stok barang</li>
+        <li>Menjaga kebersihan dan kerapihan toko</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>Daily Worker F&amp;B</h3>
+      <p class="meta">2 Hari</p>
+      <ul>
+        <li>Membantu operasional pelayanan pelanggan</li>
+        <li>Menjaga kebersihan dan kesiapan area kerja</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Keahlian</h2>
+
+    <div class="item">
+      <h3>Hard Skill</h3>
+      <ul class="tags" style="margin-top: 12px;">
+        <li>Microsoft Excel</li>
+        <li>Microsoft Word</li>
+        <li>Pengolahan Data Biaya Dasar</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>Soft Skill</h3>
+      <ul class="tags" style="margin-top: 12px;">
+        <li>Komunikasi yang Baik</li>
+        <li>Disiplin &amp; Bertanggung Jawab</li>
+        <li>Teliti</li>
+        <li>Cepat Beradaptasi</li>
+        <li>Mampu Bekerja di Bawah Tekanan</li>
+        <li>Kerja Sama Tim</li>
+      </ul>
     </div>
   </section>
 
@@ -398,6 +449,10 @@
       <div class="row">
         <dt>Instagram</dt>
         <dd><a href="https://instagram.com/ulankys_">@ulankys_</a></dd>
+      </div>
+      <div class="row">
+        <dt>Telepon</dt>
+        <dd><a href="tel:+6283101603689">+62 831 0160 3689</a></dd>
       </div>
     </dl>
   </section>
