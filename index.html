@@ -6,38 +6,31 @@
 
 <!--
   ============================================================
-  CARA MENGEDIT HALAMAN INI
-
-  Cari tulisan GANTI di bawah. Hanya bagian itu yang perlu
-  diubah. Tulisan yang diapit tanda kurung siku dengan tanda
-  seru adalah catatan, tidak ikut tampil di halaman.
-
-  Jangan ubah bagian <style> kecuali sudah paham CSS.
-  Kalau halaman jadi berantakan, buka tab History di repo
-  lalu kembalikan ke versi sebelumnya.
+  BIODATA - WULAN KEISHA PERMATA
+  Tema: Netral & Elegan (abu, krem, taupe)
   ============================================================
 -->
 
-<!-- GANTI: nama kamu -->
-<title>Nama Lengkap Kamu</title>
+<title>Wulan Keisha Permata</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root {
-    --deep:   #12231a;
-    --deep-2: #1d3428;
-    --paper:  #f1f5ee;
-    --card:   #ffffff;
-    --rule:   #cfdcd2;
-    --ink:    #12231a;
-    --soft:   #5f7167;
-    --mark:   #b8452f;
-    --mint:   #9ec2a9;
-    --serif:  "Newsreader", Georgia, "Times New Roman", serif;
-    --sans:   "Karla", "Helvetica Neue", Arial, sans-serif;
+    --bg:      #f5f3ef;   /* krem hangat */
+    --bg-2:    #ebe8e2;   /* abu krem */
+    --card:    #ffffff;
+    --ink:     #2b2b2b;   /* abu tua hampir hitam */
+    --soft:    #8a8580;   /* abu taupe */
+    --line:    #dcd7d0;   /* garis halus */
+    --accent:  #7d6e5d;   /* cokelat taupe elegan */
+    --accent-2:#a89b8a;   /* taupe muda */
+    --deep:    #3d3a36;   /* abu gelap untuk header */
+
+    --serif: "Cormorant Garamond", "Times New Roman", serif;
+    --sans:  "Inter", "Helvetica Neue", Arial, sans-serif;
   }
 
   * { box-sizing: border-box; }
@@ -45,26 +38,23 @@
 
   body {
     margin: 0;
-    background: var(--paper);
+    background: var(--bg);
     color: var(--ink);
     font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.65;
+    font-size: 15.5px;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.01em;
   }
 
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 72px; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px 80px; }
 
-  /* ---------------- kepala halaman ---------------- */
+  /* ---------------- header ---------------- */
 
   .hero {
     position: relative;
     background: var(--deep);
-    background-image: repeating-linear-gradient(
-      to bottom,
-      transparent 0, transparent 37px,
-      rgba(158,194,169,.13) 37px, rgba(158,194,169,.13) 38px
-    );
-    color: var(--paper);
+    color: var(--bg);
     overflow: hidden;
   }
 
@@ -72,49 +62,62 @@
     content: "";
     position: absolute;
     left: 0; top: 0; bottom: 0;
-    width: 10px;
-    background: var(--mark);
+    width: 6px;
+    background: var(--accent-2);
   }
 
   .hero-inner {
-    max-width: 860px;
+    max-width: 820px;
     margin: 0 auto;
-    padding: 76px 20px 64px 38px;
+    padding: 86px 24px 70px 42px;
+  }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    font-weight: 500;
+    margin: 0 0 18px;
   }
 
   h1 {
     font-family: var(--serif);
-    font-size: clamp(38px, 8vw, 68px);
-    font-weight: 600;
-    line-height: 1.04;
-    letter-spacing: -0.025em;
-    margin: 0 0 10px;
+    font-size: clamp(40px, 7.5vw, 64px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    color: #faf8f5;
   }
 
   .role {
-    color: var(--mint);
-    font-size: clamp(16px, 2.2vw, 19px);
+    color: #c9c2b8;
+    font-size: clamp(15px, 1.9vw, 17px);
     margin: 0;
-    max-width: 34em;
+    max-width: 36em;
+    font-weight: 300;
+    letter-spacing: 0.02em;
   }
 
   .hero-line {
-    width: 74px;
-    height: 3px;
-    background: var(--mark);
-    margin: 26px 0 0;
+    width: 56px;
+    height: 1px;
+    background: var(--accent-2);
+    margin: 28px 0 0;
   }
 
   /* ---------------- kartu data ---------------- */
 
   .card {
     background: var(--card);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    padding: 6px 22px;
-    margin-top: -34px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 8px 26px;
+    margin-top: -38px;
     position: relative;
-    box-shadow: 0 1px 0 rgba(18,35,26,.04);
+    box-shadow: 0 8px 32px -18px rgba(61,58,54,.18);
   }
 
   .row {
@@ -122,12 +125,19 @@
     justify-content: space-between;
     align-items: baseline;
     gap: 20px;
-    padding: 11px 0;
-    border-bottom: 1px solid var(--rule);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
   }
   .row:last-child { border-bottom: 0; }
 
-  .row dt { color: var(--soft); font-size: 15px; flex: 0 0 auto; }
+  .row dt {
+    color: var(--soft);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    flex: 0 0 auto;
+  }
 
   .row dd {
     margin: 0;
@@ -135,103 +145,161 @@
     font-variant-numeric: tabular-nums;
     font-weight: 500;
     overflow-wrap: anywhere;
+    color: var(--ink);
+    font-size: 15px;
   }
 
   /* ---------------- bagian isi ---------------- */
 
-  section { margin-top: 46px; }
+  section { margin-top: 52px; }
 
   h2 {
     font-family: var(--serif);
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 0 18px;
-    padding-left: 15px;
-    border-left: 4px solid var(--mark);
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 0 22px;
+    padding-left: 18px;
+    border-left: 2px solid var(--accent);
     line-height: 1.25;
+    letter-spacing: 0.005em;
+    color: var(--ink);
   }
 
   p { margin: 0 0 14px; }
-  .lead { font-size: 17.5px; max-width: 62ch; }
+  .lead {
+    font-size: 16.5px;
+    max-width: 62ch;
+    color: #45423e;
+    font-weight: 300;
+    line-height: 1.85;
+  }
 
-  /* ---------------- pengalaman ---------------- */
+  /* ---------------- item (pengalaman/pendidikan) ---------------- */
 
   .item {
     background: var(--card);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    padding: 18px 22px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 22px 26px;
     margin-bottom: 14px;
+    transition: border-color .25s ease;
   }
   .item:last-child { margin-bottom: 0; }
+  .item:hover { border-color: var(--accent-2); }
 
   .item h3 {
     font-family: var(--serif);
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.35;
+    color: var(--ink);
+    letter-spacing: 0.005em;
   }
 
   .meta {
-    color: var(--mark);
-    font-size: 14px;
-    font-weight: 700;
-    margin: 4px 0 8px;
-    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    font-size: 12.5px;
+    font-weight: 500;
+    margin: 6px 0 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
-  .item p { margin: 0; color: #35473c; }
+  .item p:last-child {
+    margin: 0;
+    color: #5a5651;
+    font-weight: 300;
+    line-height: 1.8;
+  }
 
-  /* ---------------- kemampuan ---------------- */
+  /* ---------------- tags ---------------- */
 
-  .tags { display: flex; flex-wrap: wrap; gap: 9px; padding: 0; margin: 0; list-style: none; }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
   .tags li {
-    background: var(--deep);
-    color: var(--paper);
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line);
     border-radius: 999px;
-    padding: 7px 16px;
-    font-size: 14.5px;
-    font-weight: 500;
+    padding: 8px 18px;
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    transition: all .25s ease;
+  }
+  .tags li:hover {
+    border-color: var(--accent);
+    color: var(--accent);
   }
 
   /* ---------------- kontak ---------------- */
 
-  .contact { background: var(--deep); border: 0; border-radius: 4px; padding: 6px 22px; margin-top: 0; box-shadow: none; }
-  .contact .row { border-bottom-color: rgba(158,194,169,.22); }
-  .contact .row dt { color: var(--mint); }
-  .contact .row dd { color: var(--paper); }
+  .contact {
+    background: var(--deep);
+    border: 0;
+    border-radius: 2px;
+    padding: 8px 26px;
+    margin-top: 0;
+    box-shadow: none;
+  }
+  .contact .row { border-bottom-color: rgba(201,194,184,.15); }
+  .contact .row dt { color: var(--accent-2); }
+  .contact .row dd { color: #e8e4de; }
 
-  a { color: inherit; text-decoration-color: var(--mark); text-decoration-thickness: 2px; text-underline-offset: 4px; }
-  a:hover { color: var(--mint); }
-  a:focus-visible { outline: 2px solid var(--mark); outline-offset: 3px; border-radius: 2px; }
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-2);
+    padding-bottom: 1px;
+    transition: border-color .25s ease, color .25s ease;
+  }
+  a:hover { border-bottom-color: var(--bg); color: var(--bg); }
+  .contact a:hover { color: #fff; border-bottom-color: #fff; }
+  a:focus-visible {
+    outline: 2px solid var(--accent-2);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
 
   footer {
-    margin-top: 46px;
-    padding-top: 18px;
-    border-top: 1px solid var(--rule);
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
     color: var(--soft);
-    font-size: 14px;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    font-weight: 300;
   }
 
   @media (max-width: 560px) {
-    .hero-inner { padding: 54px 18px 48px 30px; }
-    .card { padding: 4px 16px; margin-top: -26px; }
-    .row { flex-direction: column; gap: 0; padding: 9px 0; }
+    body { font-size: 15px; }
+    .hero-inner { padding: 60px 20px 54px 32px; }
+    .card { padding: 6px 18px; margin-top: -30px; }
+    .row { flex-direction: column; gap: 2px; padding: 12px 0; }
     .row dd { text-align: left; }
-    .contact { padding: 4px 16px; margin-top: 0; }
-    .item { padding: 16px 18px; }
+    .contact { padding: 6px 18px; margin-top: 0; }
+    .item { padding: 18px 20px; }
+    h2 { font-size: 23px; }
   }
 
   @media print {
     body { background: #fff; }
-    .hero { background: #fff; color: #12231a; background-image: none; }
-    .role { color: #5f7167; }
-    .tags li { background: #fff; color: #12231a; border: 1px solid #cfdcd2; }
-    .contact { background: #fff; border: 1px solid #cfdcd2; }
-    .contact dt { color: #5f7167; }
-    .contact dd { color: #12231a; }
+    .hero { background: #fff; color: #2b2b2b; }
+    .hero h1 { color: #2b2b2b; }
+    .eyebrow, .role { color: #8a8580; }
+    .tags li { background: #fff; color: #2b2b2b; border: 1px solid #dcd7d0; }
+    .contact { background: #fff; border: 1px solid #dcd7d0; }
+    .contact dt { color: #8a8580; }
+    .contact dd { color: #2b2b2b; }
     .card, .item { box-shadow: none; }
   }
 </style>
@@ -240,28 +308,23 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <!-- GANTI: nama lengkap kamu -->
-    <h1>Nama Lengkap Kamu</h1>
-
-    <!-- GANTI: program studi dan kampus -->
+    <p class="eyebrow">Biodata</p>
+    <h1>Wulan Keisha Permata</h1>
     <p class="role">Mahasiswa Komputerisasi Akuntansi, Universitas Komputer Indonesia</p>
-
     <div class="hero-line"></div>
   </div>
 </header>
 
 <div class="wrap">
 
-  <!-- GANTI: isi setelah <dd> dengan data kamu.
-       Mau menambah baris? Salin satu blok <div class="row"> lalu ubah isinya. -->
   <dl class="card">
     <div class="row">
       <dt>NIM</dt>
-      <dd>11122001</dd>
+      <dd>11024011</dd>
     </div>
     <div class="row">
       <dt>Angkatan</dt>
-      <dd>2022</dd>
+      <dd>2024</dd>
     </div>
     <div class="row">
       <dt>Domisili</dt>
@@ -269,16 +332,14 @@
     </div>
     <div class="row">
       <dt>Email</dt>
-      <dd>email@kamu.com</dd>
+      <dd>wulanpermata345@gmail.com</dd>
     </div>
   </dl>
 
   <section>
-    <h2>Tentang saya</h2>
-    <!-- GANTI: dua sampai tiga kalimat. Tulis apa yang kamu bisa dan
-         sedang pelajari, bukan sifat seperti rajin atau pekerja keras. -->
+    <h2>Tentang Saya</h2>
     <p class="lead">
-      Mahasiswa semester lima yang tertarik pada pencatatan keuangan berbasis sistem.
+      Mahasiswa Komputerisasi Akuntansi yang tertarik pada pencatatan keuangan berbasis sistem.
       Terbiasa mengolah data transaksi dengan Excel dan menyusun laporan keuangan sederhana,
       serta sedang mempelajari SQL untuk menarik data dari basis data.
     </p>
@@ -286,14 +347,13 @@
 
   <section>
     <h2>Kemampuan</h2>
-    <!-- GANTI: tambah atau hapus <li> sesuai kemampuan kamu -->
     <ul class="tags">
       <li>Microsoft Excel</li>
-      <li>Lookup dan pivot table</li>
-      <li>Jurnal dan laporan keuangan</li>
+      <li>Lookup &amp; Pivot Table</li>
+      <li>Jurnal &amp; Laporan Keuangan</li>
       <li>Zahir Accounting</li>
       <li>MYOB</li>
-      <li>SQL dasar</li>
+      <li>SQL Dasar</li>
       <li>GitHub</li>
     </ul>
   </section>
@@ -301,11 +361,9 @@
   <section>
     <h2>Pengalaman</h2>
 
-    <!-- GANTI: satu blok untuk satu pengalaman.
-         Salin seluruh blok <div class="item"> kalau mau menambah. -->
     <div class="item">
       <h3>Bendahara Himpunan Mahasiswa Komputerisasi Akuntansi</h3>
-      <p class="meta">2025 sampai sekarang</p>
+      <p class="meta">2025 — Sekarang</p>
       <p>Menyusun laporan pemasukan dan pengeluaran kegiatan himpunan, serta merekap pertanggungjawaban dana tiap acara.</p>
     </div>
 
@@ -319,35 +377,33 @@
   <section>
     <h2>Pendidikan</h2>
 
-    <!-- GANTI: riwayat pendidikan kamu -->
     <div class="item">
       <h3>Universitas Komputer Indonesia</h3>
-      <p class="meta">Komputerisasi Akuntansi, 2022 sampai sekarang</p>
+      <p class="meta">Komputerisasi Akuntansi · 2024 — Sekarang</p>
       <p>Mata kuliah yang diminati: sistem informasi akuntansi, akuntansi biaya, dan pengolahan data keuangan.</p>
     </div>
   </section>
 
   <section>
     <h2>Kontak</h2>
-    <!-- GANTI: username dan alamat kamu. Bagian setelah href= juga ikut diganti. -->
     <dl class="card contact">
       <div class="row">
         <dt>GitHub</dt>
-        <dd><a href="https://github.com/namaakunkamu">github.com/namaakunkamu</a></dd>
+        <dd><a href="https://github.com/ulan-key">github.com/ulan-key</a></dd>
       </div>
       <div class="row">
         <dt>Email</dt>
-        <dd><a href="mailto:email@kamu.com">email@kamu.com</a></dd>
+        <dd><a href="mailto:wulanpermata345@gmail.com">wulanpermata345@gmail.com</a></dd>
       </div>
       <div class="row">
         <dt>Instagram</dt>
-        <dd><a href="https://instagram.com/akunkamu">@akunkamu</a></dd>
+        <dd><a href="https://instagram.com/ulankys_">@ulankys_</a></dd>
       </div>
     </dl>
   </section>
 
   <footer>
-    Dibuat saat Pelatihan GitHub, Ruang Kreatif HIMA KA UNIKOM, September 2026.
+    Dibuat saat Pelatihan GitHub · Ruang Kreatif HIMA KA UNIKOM · September 2026
   </footer>
 
 </div>
